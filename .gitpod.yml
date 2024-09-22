@@ -5,5 +5,5 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: sudo apt install g++-12-aarch64-linux-gnu;
+  - init: sudo apt install g++-12-aarch64-linux-gnu tree;
     command: echo "rust cross compile tutorial on embedded environment"
