@@ -4,8 +4,14 @@ version = "0.2.0"
 authors = ["Andre Richter <andre.o.richter@gmail.com>"]
 edition = "2021"
 
+[profile.dev]
+panic = "abort"
+#opt-level = "z" # temporarily reduce init.fs load time
+
 [profile.release]
+panic = "abort"
 lto = true
+codegen-units = 1
 
 [features]
 default = []
